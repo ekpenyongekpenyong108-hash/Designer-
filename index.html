@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Des Computer Academy | Creative Portfolio 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gallery-card:hover .overlay { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold italic">D</div>
+                <h1 class="text-xl font-extrabold tracking-tighter uppercase text-slate-800">Des <span class="text-blue-600">Academy</span></h1>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-wider text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#portfolio" class="hover:text-blue-600 transition">Gallery</a>
+                <a href="#designers" class="hover:text-blue-600 transition">Designers</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Testimonials</a>
+                <a href="#contact" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-blue-600 transition">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 leading-tight">Where Creativity Meets <span class="text-blue-600">Professionalism.</span></h2>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Explore a diverse collection of high-quality graphic design works created by the talented designers at Des Computer Academy.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#portfolio" class="px-8 py-4 bg-blue-600 text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition">Explore Gallery</a>
+                <a href="#contact" class="px-8 py-4 border-2 border-slate-200 font-bold rounded-xl hover:bg-white transition">Hire Our Talent</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Empowering Creativity</span>
+                <h2 class="text-4xl font-bold mt-4 mb-6 leading-snug">Specializing in Training & Showcasing Next-Gen Designers.</h2>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">At Des Computer Academy, we don't just teach software; we cultivate innovation. Our portfolio highlights technical expertise across various creative domains.</p>
+                <div class="grid grid-cols-2 gap-4 text-sm font-bold text-slate-700">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Branding & Identity</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Social Media Graphics</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Logo Creation</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> UI/UX Concepts</div>
+                </div>
+            </div>
+            <div class="bg-blue-600 h-80 rounded-3xl relative overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1000')] bg-cover bg-center opacity-80"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2">Our Design Works</h2>
+                    <p class="text-slate-500">Curated excellence from our creative studio</p>
+                </div>
+                <div class="hidden md:flex gap-4 text-sm font-bold">
+                    <button class="text-blue-600 border-b-2 border-blue-600">All</button>
+                    <button class="text-slate-400 hover:text-slate-600">Logos</button>
+                    <button class="text-slate-400 hover:text-slate-600">Branding</button>
+                    <button class="text-slate-400 hover:text-slate-600">Flyers</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div onclick="openLightbox(this)" class="gallery-card relative group overflow-hidden rounded-2xl shadow-md bg-white cursor-zoom-in">
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800" 
+             data-full="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=1600" 
+             alt="Modern Branding" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+        <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-end p-8 opacity-0 transform translate-y-4 transition-all duration-300">
+            <span class="text-blue-300 text-xs font-bold uppercase mb-2">Designed by John Doe</span>
+            <h4 class="text-white text-xl font-bold mb-1">Modern Branding Identity</h4>
+        </div>
+    </div>
+    
+    <div onclick="openLightbox(this)" class="gallery-card relative group overflow-hidden rounded-2xl shadow-md bg-white cursor-zoom-in">
+        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=800" 
+             data-full="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=1600" 
+             alt="Digital Art" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+        <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-end p-8 opacity-0 transform translate-y-4 transition-all duration-300">
+            <span class="text-blue-300 text-xs font-bold uppercase mb-2">Designed by Jane Smith</span>
+            <h4 class="text-white text-xl font-bold mb-1">Digital Art Poster</h4>
+        </div>
+    </div>
+
+    <div onclick="openLightbox(this)" class="gallery-card relative group overflow-hidden rounded-2xl shadow-md bg-white cursor-zoom-in">
+        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=800" 
+             data-full="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&q=80&w=1600" 
+             alt="Flyer Set" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+        <div class="overlay absolute inset-0 bg-blue-900/80 flex flex-col justify-end p-8 opacity-0 transform translate-y-4 transition-all duration-300">
+            <span class="text-blue-300 text-xs font-bold uppercase mb-2">Designed by David K.</span>
+            <h4 class="text-white text-xl font-bold mb-1">Corporate Flyer Set</h4>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+    </section>
+
+    <section id="designers" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-4xl font-bold mb-16">Meet Our Designers</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="flex items-center gap-6 p-6 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition">
+                    <img src="https://i.pravatar.cc/150?u=john" class="w-24 h-24 rounded-2xl object-cover shadow-lg" alt="John">
+                    <div>
+                        <h4 class="text-xl font-bold">John Doe</h4>
+                        <p class="text-blue-600 text-sm font-bold mb-2 italic">Expert in Logo & Brand Identity</p>
+                        <p class="text-slate-500 text-sm italic">Passionate about clean geometry and minimalist systems.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 border border-slate-100 rounded-3xl shadow-sm hover:shadow-xl transition">
+                    <img src="https://i.pravatar.cc/150?u=jane" class="w-24 h-24 rounded-2xl object-cover shadow-lg" alt="Jane">
+                    <div>
+                        <h4 class="text-xl font-bold">Jane Smith</h4>
+                        <p class="text-blue-600 text-sm font-bold mb-2 italic">Social Media & Digital Design</p>
+                        <p class="text-slate-500 text-sm italic">Specialist in vibrant, high-engagement digital content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-8">Get In Touch</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <i class="fa-solid fa-location-dot text-blue-500 text-2xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-xs opacity-50 mb-1">Location</p>
+                    <p class="text-sm">Des Computer Academy, Nigeria</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone text-blue-500 text-2xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-xs opacity-50 mb-1">Call Us</p>
+                    <p class="text-sm">+234 913 543 4363</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope text-blue-500 text-2xl mb-4"></i>
+                    <p class="font-bold uppercase tracking-widest text-xs opacity-50 mb-1">Email</p>
+                    <p class="text-sm">info@desacademy.com</p>
+                </div>
+            </div>
+            <a href="mailto:info@desacademy.com" class="inline-block bg-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-500 transition shadow-lg shadow-blue-600/20">Contact Us Today</a>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Success Stories</h3>
+                <h2 class="text-4xl font-bold text-slate-900">What Our Graduates & Clients Say</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"Des Computer Academy transformed my understanding of design. I went from a beginner to landing my first freelance branding gig in just 3 months!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=emmanuel" class="w-12 h-12 rounded-full object-cover" alt="Student">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Emmanuel O.</h4>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">Graphic Design Graduate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"We hired a designer from the academy for our corporate rebranding. The attention to detail and creative execution exceeded our expectations."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=sarah" class="w-12 h-12 rounded-full object-cover" alt="Client">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Sarah Williams</h4>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-xl transition duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6">"The AI Integration course is a game changer. I can now build intelligent chatbots that solve real business problems. Best investment ever."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=samuel" class="w-12 h-12 rounded-full object-cover" alt="Student">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Samuel Ade</h4>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">AI Specialist Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:row justify-between items-center gap-8">
+            <p class="text-slate-400 text-sm">© 2026 Des Computer Academy. All Rights Reserved.</p>
+            <div class="flex gap-6 text-xl text-slate-400">
+                <a href="#" class="hover:text-blue-600 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl hover:text-blue-500 transition">&times;</button>
+    <div class="max-w-5xl w-full flex flex-col items-center">
+        <img id="lightbox-img" src="" class="max-h-[85vh] rounded-lg shadow-2xl border border-white/10">
+        <div class="mt-4 text-center">
+            <h4 id="lightbox-title" class="text-white text-2xl font-bold"></h4>
+            <p id="lightbox-designer" class="text-blue-400 font-semibold"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openLightbox(element) {
+        const img = element.querySelector('img');
+        const title = element.querySelector('h4').innerText;
+        const designer = element.querySelector('span').innerText;
+        const fullSrc = img.getAttribute('data-full');
+
+        document.getElementById('lightbox-img').src = fullSrc;
+        document.getElementById('lightbox-title').innerText = title;
+        document.getElementById('lightbox-designer').innerText = designer;
+        
+        const lb = document.getElementById('lightbox');
+        lb.classList.remove('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeLightbox() {
+        const lb = document.getElementById('lightbox');
+        lb.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+        
+        // Small delay before clearing src to prevent flash
+        setTimeout(() => {
+            document.getElementById('lightbox-img').src = "";
+        }, 300);
+    }
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") closeLightbox();
+    });
+</script>
+
+</html>
